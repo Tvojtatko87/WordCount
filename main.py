@@ -31,7 +31,7 @@ def main():
         word_counts = count_unique_words(text)
         
         # Filter words based on user input
-        filtered_words = [(word, count, len(word)) for word, count in word_counts.items() if count > min_word_count and len(word) > min_word_length]
+        filtered_words = [(word, count, len(word)) for word, count in word_counts.items() if count >= min_word_count and len(word) > min_word_length]
         
         # Sort the filtered words based on their counts in descending order
         filtered_words.sort(key=lambda x: x[1], reverse=True)
