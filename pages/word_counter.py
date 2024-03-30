@@ -17,6 +17,7 @@ def count_unique_words(text):
 
 def main():
     st.title("Word Counter")
+    st.write("##### Sem nahrajte txt file kde máte ten text z webstránok")
     st.write("Upload a text file below:")
 
     uploaded_file = st.file_uploader("Choose a file", type="txt")
