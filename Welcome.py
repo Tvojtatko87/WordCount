@@ -9,7 +9,23 @@ st.sidebar.write("##### Pozri kód tu:")
 st.sidebar.write("https://github.com/sorujko/WordCount")
 
 st.write("# Nazdar močky! 👋")
-st.write("##### Text zo stránok - text extract")
+
+html_code = '''
+<div class="tenor-gif-embed" data-postid="14884815" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%"><a href="https://tenor.com/view/bejr-majsner-psychopat-bejr-rage-gif-14884815">Bejr Majsner GIF</a>from <a href="https://tenor.com/search/bejr-gifs">Bejr GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+'''
+
+show_html = st.toggle("Show/Hide Video" , value=1)
+
+if show_html:
+    st.components.v1.html(html_code, width=600, height=337)
+
+
+st.write("#### Weather forecast - počasie")
+st.write(""" 
+Cygeneruje vám počasie na február a marec.
+""")
+
+st.write("#### Text zo stránok - text extract")
 st.write(""" 
 Extrahuje text z url , ktoré sa nachádzajú v txt súbore.
 """)
