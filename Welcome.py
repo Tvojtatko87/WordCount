@@ -9,6 +9,10 @@ st.sidebar.write("##### Pozri kód tu:")
 st.sidebar.write("https://github.com/sorujko/WordCount")
 
 st.write("# Nazdar močky! 👋")
+st.write("##### Text zo stránok - text extract")
+st.write(""" 
+Extrahuje text z url , ktoré sa nachádzajú v txt súbore.
+""")
 st.write("#### 1. Úloha - word counter")
 st.write(""" 
 Zo súboru Noviny  
